@@ -1,0 +1,116 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff0;
+}
+
+header .description {
+    font-size: 1rem;
+    color: #fff;
+}
+
+nav {
+    background: #444;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #ff0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.home-img {
+    display: block;
+    margin: 2rem auto;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 2200px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #ff0;
+}
+
+.programs-container, .products-container, .members-container, .fees-container, .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program-item, .product-item, .member-item, .fees-item, .contact-item {
+    background: #444;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.program-item img, .product-item img, .member-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.best-tag {
+    background: red;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+footer {
+    background: #333;
+    text-align: center;
+    padding: 1rem 0;
+    color: #ff0;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-container, .products-container, .members-container, .fees-container, .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
